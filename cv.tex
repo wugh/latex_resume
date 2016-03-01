@@ -1,0 +1,136 @@
+%        File: cv.tex
+%     Created: Mon Dec 08 08:00 PM 2014 C
+% Last Change: Mon Dec 08 08:00 PM 2014 C
+%
+\documentclass[11pt,a4paper]{resume}
+
+\begin{document}
+
+\name{Guohua Wu}
+\address{+86 185-0137-0591}
+{ghmeta@163.com}
+{Room 1332, Student Apartment 10, BUPT,  No. 10 Xi Tu Cheng Road,  Beijing, 100876, China}
+
+\section{Education}
+\noindent\begin{tabularx}{\textwidth}{@{}p{14em}p{8.5em}p{3em}p{7em}R@{}}
+\textbf{Beijing University of Posts and Telecommunications} & Computer Science and Technology & M.S.E & GPA:\@ 87.73/100 (Rank: 4/400) & Sept. 2013\timedash{}Expected Mar. 2016\\[0.3em]
+\textbf{Beijing University of Posts and Telecommunications} & Intelligence Science and Technology& B.E & GPA:\@ 89.64/100 (Rank: 1/32) & Sept. 2009\timedash{}Jun. 2013
+\end{tabularx}
+\vspace{-1.7em}
+%\education{Beijing University of Posts and Telecommunications, School of Computer Science}
+%{Beijing, China}
+%{Master of Science in Engineering, Computer Science and Technology}
+%{Sept. 2013\timedash{}Expected Mar. 2016}
+%{GPA:\@ 87.73/100~(ranked $4^{th}$ out of over 400 students)}
+
+%\education{Beijing University of Posts and Telecommunications, School of Computer Science}
+%{Beijing, China}
+%{Bachelor of Engineering, Intelligence Science and Technology}
+%{Sept. 2009\timedash{}Jun. 2013}
+%{GPA:\@ 89.64/100~(ranked $1^{st}$ in major)}
+
+\section{Technical Skills}
+%\begin{itemize}[leftmargin=*,nosep,labelsep=0mm,label={}]
+  %\item \textbf{Languages:}
+  %\begin{itemize}[leftmargin=*,labelindent=\parindent,nosep,label={}]
+    %\begin{tabular}{@{}p{125pt}l} % two cloumns, first width is 10em, and left margin is 0pt
+    %Most experienced with:     &     Python, C, C\verb|++| and Java \\
+    %\end{tabular}
+  %\end{itemize}
+%\end{itemize}
+\begin{skilltable}
+\textbf{Languages:}     &     Python, C, C\verb|++| and Java \\
+\textbf{Research Fields:}     &     Natural Language Processing, Dialogue Management and Machine Learning\\
+\textbf{Software:}     &    Linux, Vim, Awk, Sed, Latex, Intellij Idea, Eclipse, Git and MySQL
+\end{skilltable}
+
+\section{Intenship Experience}
+\internship{Alibaba Group, Alimama Display Advertising}{Algorithm Engineer Intern}{May 2015\timedash{}Sept. 2015}
+\begin{workitemize}
+  \item Implemented advertiser-based collaborative filtering algorithm to
+    generate black-box crowd packages for advertisers.
+  %\item Increased CTR of alchemy targeting by 24\% through implementing a page
+    %view filter.
+  \item Developed a tool to evaluate offline the performance of advertising on
+    black-box crowd packages.
+  \item Maked frequently-used Ad performance reports generation process 30
+    times faster by developing a middle table.
+  %\item Reduced frequently-used Ad performance reports generation time from 30 min to 1
+    %min by developing a middle table.
+  \item Developed targeting performance reports of various dimensions for
+    targeting performance monitor.
+\end{workitemize}
+
+\internship{Nuance}{Natural Language Processing Engineer Intern}{Mar. 2014\timedash{}Jul. 2014}
+\begin{workitemize}
+  \item Developed a Natural Language Understanding~(NLU) module for in-car
+    voice assistant.
+  \item Generated spoken utterances for 12 domains by filling dictionary into
+    corresponding templates' slots, and extracted features from these utterances
+    to produce training data for Maxent classifier and CRF-based slot extractor.
+  \item Developed a Rule-based NLU for domains whose spoken utterances are
+    relatively limited.
+\end{workitemize}
+
+\internship{Baidu, Wenku}{Software Development Engineer in Test Intern}{Dec. 2012\timedash{}Apr. 2013}
+\begin{workitemize}
+  \item Tested back-end interfaces for Wenku~(wenku.baidu.com) through
+    automating test.
+  \item Created test cases from the functional requirements, reported bug and
+    wrote test report.
+  %\item Developed bash script to build test environment automatically.
+\end{workitemize}
+
+\section{Projects}
+\project{SIGHAN Chinese Word Segmentation~(Team Size: 2)}{Core Developer}{May 2014\timedash{}Aug. 2014}
+\begin{workitemize}
+  \item Presented a CRF-based Chinese segmentation system integrating
+    supervised, unsupervised~(Accessor Variety) and lexical features, and
+    refined segmentation result with new word detection.
+  \item Completed segmentation system development and feature extraction, and
+    \emph{improved 2\%} performance~(F1 score) by integrating unsupervised and
+    lexical features.
+  \item \emph{Our system ranked first in the 3rd CIPS-SIGHAN bakeoff with
+    precision 0.968, recall 0.978 and F1 score 0.972.}
+\end{workitemize}
+
+\project{POMDP-based Spoken Dialog System~(Team Size: 1)}{Core Developer}{Sept. 2014\timedash{}Present}
+\begin{workitemize}
+  \item Implemented a web-based spoken dialog system, and casted spoken dialog
+    system as a Partially observable Markov decision process~(POMDP). Estimated
+    POMDP's parameters from dialog corpus and solved POMDP to generate policy.
+    Consequently, interacted with user according to POMDP's policy instead of
+    manual rules.
+  \item Implemented POMDP-based dialogue management module and natural language
+    understanding module based on Maximum Entropy and CRF.\@
+  %\item Called Google Speech API to implemented automatic speech recognition
+    and speech synthesis.
+\end{workitemize}
+
+\project{Samsung Chinese Material Crawling~(Team Size: 3)}{Core Developer}{Sept. 2013\timedash{}Dec. 2013}
+\begin{workitemize}
+  \item Implemented a web crawler supporting main textual content extracting
+    and duplicate paragraph removal.
+\end{workitemize}
+
+\project{Dialogue System in Given Field~(Team Size: 3)}{Core Developer}{Mar. 2012\timedash{}Jul. 2012}
+\begin{workitemize}
+  \item Provided Android LBS applications to recommend restaurants through
+    human-machine conversation.
+  \item Extracted restaurants' information, designed information retrieval
+    interfaces and implemented Android application.
+  \item \emph{Awarded the Second Prize of the Chinese University Students
+    Intelligence Design Contest, 2012.}
+\end{workitemize}
+
+\section{Awards}
+\scholarship{Vmware Enterprise Scholarship}{ranked $4^{th}$ out of over 400 students}{Sept. 2013\timedash{}Sept. 2014}
+\scholarship{Changfei Enterprise Scholarship}{ranked $1^{st}$ in major}{Sept. 2011\timedash{}Sept. 2012}
+\scholarship{National Scholarship for Encouragement}{ranked $1^{st}$ in major}{Sept. 2010\timedash{}Sept. 2011}
+\scholarship{National Scholarship}{ranked $1^{st}$ in major}{Sept. 2009\timedash{}Sept. 2010}
+\award{First prize in BUPT's Innovation Award Contest}{Jun. 2012}
+\award{Second prize in Beijing Undergraduate Electronic Design Contest}{Jun. 2012}
+
+\end{document}
+
+

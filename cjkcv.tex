@@ -1,0 +1,140 @@
+%        File: cv.tex
+%     Created: Mon Dec 08 08:00 PM 2014 C
+% Last Change: Mon Dec 08 08:00 PM 2014 C
+%
+\documentclass[11pt,a4paper]{cjkresume}
+
+\begin{document}
+
+\name{吴国华}
+\address{+86 185-0137-0591}
+{ghmeta@163.com}
+{男}
+{北京市海淀区西土城路10号北京邮电大学学十1332}
+
+\section{教育背景}
+\noindent\begin{tabularx}{\textwidth}{@{}p{8em}p{10em}p{6em}p{16em}R@{}}
+  \textbf{北京邮电大学} & 计算机科学与技术 & 工学硕士 & GPA:\@ 87.73/100 (学院排名4/400) & 2013.09\timedash{}2016.04 \\[0.3em]
+\textbf{北京邮电大学} & 智能科学与技术 & 工学学士 & GPA:\@ 89.64/100 (专业排名1/32) & 2009.09\timedash{}2013.06
+\end{tabularx}
+\vspace{-1.7em}
+
+%\education{北京邮电大学}
+%{研究生在读}
+%{计算机科学与技术}
+%{2013.09\timedash{}至今}
+%{GPA:\@ 87.73/100 (学院排名4/400)}
+
+%\education{北京邮电大学}
+%{学士学位}
+%{智能科学与技术}
+%{2009.09\timedash{}2013.06}
+%{GPA:\@ 89.64/100 (专业排名1/32)}
+
+\section{专业技能}
+\begin{skilltable}
+\textbf{编程语言:}    &     Python，C，C\verb|++|，Java\\
+\textbf{专业知识:}     &    自然语言处理，对话管理，机器学习\\
+\textbf{工具:}     &     Linux，Vim，Awk，Sed，Latex，Intellij Idea，Eclipse，Git，MySQL
+\end{skilltable}
+
+\section{实习经历}
+\internship{阿里巴巴，阿里妈妈，钻石展位算法工程师}{2015.05\timedash{}2015.09}
+\begin{workitemize}
+  %通过添加PV质量过滤逻辑使得外投掘金定向的CTR提高24\%；钻展黑盒人群包离线效果评估工具开发。
+  \item 钻展黑盒人群包项目：通过算法为广告主圈出其优质人群，降低广告主的投放门
+    槛和操作成本。
+    \begin{workdetailitemize}
+      \item 实现基于用户淘宝内部行为的advertiser-based协同过滤算法帮助广告主圈出优
+	质人群。
+      \item 基于广告投放日志实现黑盒人群包离线效果评估工具开发。
+    \end{workdetailitemize}
+  \item 钻展广告投放效果监控工具开发：
+    \begin{workdetailitemize}
+      \item 通过开发钻展投放效果中间层报表，使得生成常用效果报表的时间由原来的30分
+	钟缩短到1分钟。
+      \item 钻展定向监控，产出各个定向整体的效果报表、广告位和广告主粒度的定向
+	效果报表以及抄底流量成分报表。
+    \end{workdetailitemize}
+\end{workitemize}
+
+\internship{Nuance，自然语言处理实习生}{2014.03\timedash{}2014.07}
+\begin{workitemize}
+  \item 参与开发车载语音助手中的自然语言理解模块，主要功能是对用户的文本命令进
+    行分类和命令参数提取。
+  \item 负责训练语料生成，通过收集到的模板和词典生成12个领域的文本命令，并对生
+    成的文本命令进行预处理和特征抽取，最后生成最大熵模型和CRF模型的训练语料。
+  \item 负责实现基于规则的文本命令分类和命令参数提取系统，在表达方式比较限定的
+    领域进行测试，准确率达到95\%。
+\end{workitemize}
+
+\internship{百度，文库，测试开发实习生}{2012.10\timedash{}2013.04}
+\begin{workitemize}
+  \item 根据文库后端的API编写相应的自动化测试用例进行接口测试。
+  \item 根据需求说明设计测试用例，对产品进行功能测试，Bug报告，编写测试报告。
+  \item 编写Bash脚本进行自动化测试环境搭建。
+\end{workitemize}
+
+\section{项目经历}
+
+\project{基于POMDP的口语对话系统实现~(团队人数: 1)}{主要开发人员}{2014.09\timedash{}至今}
+\begin{workitemize}
+  \item 以简单的教学任务为背景，实现一个基于Web的语音对话系统，把对话管理过程建
+    模成部分可观测马尔可夫决策过程（POMDP）从语料中估计POMDP的相关参数，然后求
+    解出POMDP的决策函数。对话过程中根据用户动作估计当前系统的状态分布，从而根据
+    决策函数作出响应来控制对话过程。
+  \item 实现基于最大熵和CRF的语义理解模块，基于POMDP的对话管理模块。
+  \item 调用Google API实现语音识别和语音合成模块。
+  \item 发表论文: Finite-to-Infinite N-Best POMDP for Spoken Dialogue Management。
+\end{workitemize}
+
+\project{SIGHAN中文切分~(团队人数: 2)}{主要开发人员}{2014.05\timedash{}2014.08}
+\begin{workitemize}
+  \item 参加SIGHAN-2014中文切分评测任务，实现基于CRF的中文切分系统，通过引入词
+    典特征和无监督分词特征（Accessor Variety，AV）以及新词发现来增强模型的新词
+    切分能力。
+  \item 负责特征抽取和切分系统实现，通过添加词典和AV特征使得系统性能（F值）\emph{提高2\%}。
+  \item \emph{获得评测任务第一名，准确率为0.968，召回率为0.978，F值为0.973}。
+  \item 发表论文: Leveraging Rich Linguistic Features for Cross-domain Chinese Segmentation。
+\end{workitemize}
+
+\project{三星中文语料获取~(团队人数: 3)}{主要开发人员}{2013.09\timedash{}2013.12}
+\begin{workitemize}
+  \item 通过编写爬虫进行网页获取，对网页进行正文抽取，按照项目的需求对文本进行
+    段落去重。
+\end{workitemize}
+
+\project{特定领域人际对话系统~(团队人数: 3)}{主要开发人员}{2012.03\timedash{}2012.07}
+\begin{workitemize}
+  \item 本系统在安卓平台上将LBS信息加入到特定领域的人机对话系统，使用自然对话的
+    形式实现为用户查找推荐餐馆。
+  \item 主要负责餐馆信息抽取、搭建数据库、信息检索、安卓App实现。
+  \item \emph{获得全国大学生智能设计大赛二等奖}。
+\end{workitemize}
+
+\section{获奖情况}
+\noindent\begin{minipage}{0.5\textwidth}
+  \begin{workitemize}
+    \item 2014.09\quad{}VMWARE企业奖学金~(排名4/400)
+    \item 2012.09\quad{}长飞企业奖学金~(排名1/32)
+    \item 2011.09\quad{}国家励志奖学金~(排名1/32)
+  \end{workitemize}
+\end{minipage}%
+\hfill
+\begin{minipage}{0.5\textwidth}
+  \begin{workitemize}
+    \item 2010.09\quad{}国家奖学金~(排名1/32)
+    \item 2012.06\quad{}北京市大学生电子设计竞赛二等奖
+    \item 2012.06\quad{}北京邮电大学创新项目一等奖
+  \end{workitemize}
+\end{minipage}%
+%\scholarship{VMWARE企业奖学金}{年级排名第4获得}{2013.09\timedash{}2014.09}
+%\scholarship{长飞企业奖学金}{专业排名第1获得}{2011.09\timedash{}2012.09}
+%\scholarship{国家励志奖学金}{专业排名第1获得}{2010.09\timedash{}2011.09}
+%\scholarship{国家奖学金}{专业排名第1获得}{2009.09\timedash{}2010.09}
+%\award{北京市大学生电子设计竞赛二等奖}{2012.06}
+%\award{北京邮电大学创新项目一等奖}{2012.06}
+
+\end{document}
+
+
